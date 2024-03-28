@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ruisu</title>
+  <link rel="stylesheet" href="./lib/bootstrap.min.css">
+</head>
+<body>
+  <div class="container" style="width: 50%;">
+    <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div data-bs-interval="3000" class="carousel-item active">
+          <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2019/09/30/10/12/notredame-de-paris-4515298_1280.jpg"/>
+          <div class="carousel-caption">
+            <h2>Foto 1</h2>
+          </div>
+        </div>
+        <div data-bs-interval="3000" class="carousel-item">
+          <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2014/10/08/04/47/moon-478982_1280.jpg"/>
+          <div class="carousel-caption">
+            <h2>Foto 2</h2>
+          </div>
+        </div>
+        <div data-bs-interval="3000" class="carousel-item">
+          <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2018/04/09/19/55/low-poly-3305284_1280.jpg"/>
+          <div class="carousel-caption">
+            <h2>Foto 3</h2>
+          </div>
+        </div>
+      </div>
+      <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+      </div>
+    </div>
+  
+   <!-- Layout com grid responsivo -->
+   <div class="row" style="padding-top: 10px;">
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="card" style="margin-top: 10px;">
+        <div class="card-body">
+          <h5 class="card-title">Item 1</h5>
+          <img src="https://cdn.pixabay.com/photo/2018/04/09/19/55/low-poly-3305284_1280.jpg" style="width: 100%;">
+          <p class="card-text">Conteúdo do item 1.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="card" style="margin-top: 10px;">
+        <div class="card-body">
+          <h5 class="card-title">Item 2</h5>
+          <img src="https://cdn.pixabay.com/photo/2014/10/08/04/47/moon-478982_1280.jpg" style="width: 100%;">
+          <p class="card-text">Conteúdo do item 2.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="card" style="margin-top: 10px;">
+        <div class="card-body">
+          <h5 class="card-title">Item 3</h5>
+          <img src="https://cdn.pixabay.com/photo/2019/09/30/10/12/notredame-de-paris-4515298_1280.jpg" style="width: 100%;">
+          <p class="card-text">Conteúdo do item 3.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
