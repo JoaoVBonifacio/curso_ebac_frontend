@@ -1,66 +1,102 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página do João</title>
-    <link rel="stylesheet" href="build/styles/main.css">
+    <!-- links google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- links CSS -->
+    <link rel="stylesheet" href="/build/styles/main.css">
+    <title>exercicio_less</title>
+    <!-- Configuração do less
+        1 - Abra o terminal (F1) e instale a versão global do less "npm install -g less"
+        2 - Execute o comando "npm init" para criar o package.json
+        3 - Para instalar a dependência do less execute o comando "npm install --save-dev less"
+        4 - Como boa prática, crie o arquivo ".gitignore" e nele inclua o "node_modules" para evitar sobrepeso desnecessário ao subir o projeto no git
+        5 - Crie uma pasta styles em um local a gosto, dentro um arquivo com o nome "main.less"
+        6 - No package.json, ná área de scripts insira ("less": "lessc ./src/styles/main.less ./build/styles/main.css")
+        7 - Execute no terminal o comando "npm rum less"-->
+    
+    <!-- Configuração de Plugin para compilação automática do less
+        1 - No terminal execute a instalação global com "npm i -g less-watch-compiler"
+        2 - Em seguida instalamos como dependência no projeto com "npm i --save-dev less-watch-compiler"
+        3 - IMPORTANTE Se estiver trabalhando com este plugin, o código no .json tem que ser alterado para ("less": "less-watch-compiler ./src/styles ./build/styles main.less")
+        4 - Com isto feito, execute novamente o "npm run less", para cancelar o watch, no terminal execute Ctrl + c-->
 </head>
 <body>
-    <div class="container">
-        <header>
-            <img class="profile-avatar" src="https://via.placeholder.com/96x96">
-            <div class="profile-bio">
-                <h1 class="profile-bio-name">Página do João</h1>
-                <h2 class="profile-bio-subtitle">Engenheiro Front-end</h2>
-                <p class="profile-bio-description">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus facere magnam ea enim voluptas tempora consequatur delectus eius, quas velit et libero repellat nemo eum explicabo sequi illum similique. Et.
-                </p>
+    <header>
+        <div class="container">
+            <div class="branding">
+                <img src="https://via.placeholder.com/120x70" />
             </div>
             <nav>
-            <ul class="social-links">
-                    <li><a href="">
-                        <img src="./src/images/instagram.svg" alt="LogoInstagram">
-                    </a>
-                </li>
-                    <li><a href="">
-                        <img src="./src/images/linkedin.svg" alt="LogoLinkedin">
-                    </a>
-                </li>
-                    <li><a href="">
-                        <img src="./src/images/github.svg" alt="LogoGithub">
-                    </a>
-                </li>
-                    <li><a href="">
-                        <img src="./src/images/mail.svg" alt="LogoEmail">
-                    </a>
-                </li>    
-            </ul>
-            </nav>
-            <nav>
-                <ul class="projects-list">
-                    <li class="projects-list-item">
-                        <a href="">
-                            Visite o Projeto "Calculadora de médias"
-                        </a>
-                    </li>
-                    <li class="projects-list-item">
-                        <a href="">
-                            Visite o Projeto "Games Shop"
-                        </a>
-                    </li>
-                    <li class="projects-list-item">
-                        <a href="">
-                            Visite o Projeto "Galeria de fotos"
-                        </a>
+                <ul class="menu">
+                    <li>
+                        <a href="#">Início</a>
                     </li>
                 </ul>
             </nav>
-        </header>
         </div>
-        
+    </header>
+    <section>
+        <div class="container">
+            <h2>Produtos</h2>
+            <ul class="products">
+                <li class="product-item">
+                    <img src="https://via.placeholder.com/180x180" />
+                    <h4>Nome do produto</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatibus iusto tenetur, officia sit explicabo placeat doloribus minus excepturi quibusdam cum odio ea beatae porro, quos ducimus maxime neque dolores?
+                    </p>
+                    <a href="#" class="product-button">
+                        Ver detalhes
+                    </a>
+                </li>
+                <li class="product-item">
+                    <img src="https://via.placeholder.com/180x180" />
+                    <h4>Nome do produto</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quo eveniet porro, reiciendis soluta facilis ea mollitia omnis iusto optio necessitatibus et laudantium modi nulla commodi nobis odio quas autem!
+                    </p>
+                    <a href="#" class="product-button">
+                        Ver detalhes
+                    </a>
+                </li>
+                <li class="product-item">
+                    <img src="https://via.placeholder.com/180x180" />
+                    <h4>Nome do produto</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, aliquid quidem! Quidem, eveniet maxime eius quae nihil officiis perferendis. Laudantium, autem ipsam quidem doloremque libero officia vitae et neque fuga?
+                    </p>
+                    <a href="#" class="product-button">
+                        Ver detalhes
+                    </a>
+                </li>
+                <li class="product-item">
+                    <img src="https://via.placeholder.com/180x180" />
+                    <h4>Nome do produto</h4>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, fugit? Delectus nam ipsam cupiditate amet quas accusamus unde est facilis, consectetur animi voluptates optio at accusantium voluptas, eum corporis saepe!
+                    </p>
+                    <a href="#" class="product-button">
+                        Ver detalhes
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <ul class="social-links">
+                <li><a href=""><img src="/src/images/instagram.svg" alt="Instagram icon"></a></li>
+                <li><a href=""><img src="/src/images/linkedin.svg" alt="Linkedin icon"></a></li>
+                <li><a href=""><img src="/src/images/github.svg" alt="Github icon"></a></li>
+                <li><a href=""><img src="/src/images/mail.svg" alt="Mail icon"></a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
